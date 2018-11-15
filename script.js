@@ -10,7 +10,7 @@ app.appendChild(image);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://www.themuse.com/api/public/jobs', true);
+request.open('GET', 'https://www.themuse.com/api/public/jobs=1', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
