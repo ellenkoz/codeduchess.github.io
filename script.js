@@ -1,5 +1,8 @@
 const app = document.getElementById('root');
 
+const image = document.createElement('img');
+image.src = 'woman_pc.jpg';
+
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
