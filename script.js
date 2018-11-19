@@ -1,7 +1,7 @@
 const app = document.getElementById('root');
 
 const image =documnet.createElement('img');
-image.src= "woman_pc.png;
+image.src= 'woman_pc.png';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
