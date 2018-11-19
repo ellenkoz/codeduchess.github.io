@@ -1,6 +1,6 @@
 const app = document.getElementById('root');
 
-const image =documnet.createElement('img');
+const image =document.createElement('img');
 image.src= 'woman_pc.jpg';
 
 const container = document.createElement('div');
