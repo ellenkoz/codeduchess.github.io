@@ -16,9 +16,10 @@ request.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
-    data.results.forEach (job => {
+    data.forEach (job => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
+      console.log(data);
 
       const h1 = document.createElement('h1');
       h1.textContent = job.title;
