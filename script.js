@@ -1,8 +1,12 @@
 const app = document.getElementById('root');
 
+const image =documnet.createElement('img');
+image.src= "woman_pc.png;
+
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
+app.appendChild(image);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
