@@ -37,7 +37,6 @@ else {
     const errorMessage = document.createElement('marquee');
     errorMessage.textContent = `Darn, it's not working!`;
     app.appendChild(errorMessage);
-  }
 };
 
 request.send();
