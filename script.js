@@ -7,7 +7,6 @@ request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
 request.onload = function () {
  // begin accessing JSON data here 
  }
-}
 
 // send request
 request.send();
