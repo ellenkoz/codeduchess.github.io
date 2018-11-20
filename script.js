@@ -17,10 +17,9 @@ request.onload = function () {
   var data = JSON.parse(this.response);
   
     data.results.forEach (job => {
-      // Log each job title
-       console.log(job.title);
-       });
-      inside.request.onload = function() {
+      const card = document.createElement('div');
+      card.setAttribute('class', 'card');
+       
 
       const h1 = document.createElement('h1');
       h1.textContent = job.title;
