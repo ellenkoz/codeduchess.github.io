@@ -38,6 +38,6 @@ else {
     errorMessage.textContent = `Darn, it's not working!`;
     app.appendChild(errorMessage);
   }
-}
+};
 
 request.send();
