@@ -10,7 +10,7 @@ container.setAttribute('class', 'container');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
+request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1category=Account%20Management&category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Marketing%20%26%20PR&category=Project%20%26%20Product%20Management', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
