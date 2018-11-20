@@ -10,3 +10,13 @@ request.onload = function () {
 
 // send request
 request.send();
+
+//must convert JSOn into JS objects in order to work with it -- will use JSON.parse()
+// begin accessing JSON data here
+var data = JSON.parse(this.response);
+
+//create a data variable that contains all the JSON as an array using forEach()
+data.forEach(job => {
+  // log each job title
+ console.log(job.title);
+});
