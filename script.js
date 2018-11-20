@@ -20,7 +20,7 @@ request.onload = function () {
       // Log each job title
        console.log(job.title);
        });
-      ) inside request.onload = function() {
+      inside request.onload = function() {
 
       const h1 = document.createElement('h1');
       h1.textContent = job.title;
