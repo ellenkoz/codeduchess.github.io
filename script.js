@@ -22,12 +22,12 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = jobs.title;
+      h1.textContent = job.title;
 
       const p = document.createElement('p');
       // original code:  job.description = job.description.substring(0, 300);//
-      jobs.description = JSON.stringify(jobs.description).substring(0, 300);
-      p.textContent = `${jobs.description}...`;
+      job.description = JSON.stringify(job.description).substring(0, 300);
+      p.textContent = `${job.description}...`;
 
       container.appendChild(card);
       card.appendChild(h1);
