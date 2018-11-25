@@ -1,4 +1,4 @@
-//Create a request varibale and assign a new XMLHttpRequest object
+//Create a request variable and assign a new XMLHttpRequest object
 var request = new XMLHttpRequest();
 
 //Open a new connection, using GET request on the URL endpoint
@@ -11,8 +11,7 @@ request.onload = function () {
 // send request
 request.send();
 
-//must convert JSOn into JS objects in order to work with it -- will use JSON.parse()
-// begin accessing JSON data here
+//must convert JSON into JS objects in order to work with it -- will use JSON.parse()
 var data = JSON.parse(this.response);
 
 //create a data variable that contains all the JSON as an array using forEach()
