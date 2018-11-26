@@ -18,5 +18,5 @@ var data = JSON.stringify(this.response);
 if (typeof data !== 'undefined') {
 data.forEach(job => {
   // log each job title
- console.log(job.title))};
-             };
+ console.log(job.title)};
+ )};
