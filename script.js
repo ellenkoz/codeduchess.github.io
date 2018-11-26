@@ -2,7 +2,7 @@
 var request = new XMLHttpRequest();
 
 //Open a new connection, using GET request on the URL endpoint
-request.open('GET', 'https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Marketing%20%26%20PR&category=Social%20Media%20%26%20Community&page=1', true);
+request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
              
 request.onload = function () {
  // begin accessing JSON data here 
@@ -17,5 +17,5 @@ var data = JSON.stringify(this.response);
 //create a data variable that contains all the JSON as an array using forEach()
 data.forEach(job => {
   // log each job title
- console.log(job);
+ console.log(job.title);
 });
