@@ -17,5 +17,5 @@ var data = JSON.stringify(this.response);
 //create a data variable that contains all the JSON as an array using forEach()
 data.forEach(job => {
   // log each job title
- console.log(jobs);
+ console.log(job);
 });
