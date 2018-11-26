@@ -19,4 +19,4 @@ if (typeof data !== 'undefined') {
 data.forEach(job => {
   // log each job title
  console.log(job.title)}
-}});
+});
