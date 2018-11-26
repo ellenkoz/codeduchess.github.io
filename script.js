@@ -12,7 +12,7 @@ request.onload = function () {
 request.send();
 
 //must convert JSON into JS objects in order to work with it -- will use JSON.parse()
-var data = JSON.parse(this.response);
+var data = JSON.stringify(this.response);
 
 //create a data variable that contains all the JSON as an array using forEach()
 data.forEach(job => {
