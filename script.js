@@ -7,7 +7,7 @@ const app = document.getElementById('root');
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-app.appendChild('img');
+//app.appendChild('img');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
