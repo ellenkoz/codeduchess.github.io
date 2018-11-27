@@ -16,10 +16,11 @@ var data = JSON.stringify(this.response);
 
 //create a data variable that contains all the JSON as an array using forEach()
 if (typeof data === 'undefined') {
+  else
+    alert("Undefined");
+  
   data.forEach(job => {
   // log each job title
      console.log(job,title)}
-   )}
-  else
-    alert("undefined");
-
+   )};
+  
