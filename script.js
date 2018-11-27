@@ -1,8 +1,8 @@
 
 const app = document.getElementById('root');
 
-const image = document.createElement('img');
-image.src = 'woman_pc.jpg';
+const logo = document.createElement('img');
+logo.src = 'logo.png';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
