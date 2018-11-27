@@ -1,13 +1,13 @@
 
 const app = document.getElementById('root');
 
-const logo = document.createElement('img');
-logo.src = 'logo.png';
+//const logo = document.createElement('img');
+//logo.src = 'logo.png';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-app.appendChild('img');
+//app.appendChild('img');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
