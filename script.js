@@ -3,7 +3,7 @@ var request = new XMLHttpRequest();
 
 //Open a new connection, using GET request on the URL endpoint
 request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
-    var data = JSON.stringify(this.response);
+    var data = JSON.parse(this.response);
     alert(data);    
 request.onload = function () {
  // begin accessing JSON data here 
