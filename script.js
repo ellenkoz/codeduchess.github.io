@@ -7,7 +7,7 @@ image.src = 'woman_pc.jpg';
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-app.appendChild(image);
+app.appendChild('img');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
