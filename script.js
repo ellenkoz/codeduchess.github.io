@@ -8,7 +8,7 @@ request.onload = function () {
  // begin accessing JSON data here 
  //must convert JSON into JS objects in order to work with it -- will use JSON.parse()
 var data = JSON.stringify(this.response);
-
+    alert(data);
 //create a data variable that contains all the JSON as an array using forEach()
 if (typeof data === 'undefined') {
  
