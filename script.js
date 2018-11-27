@@ -8,7 +8,7 @@ const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
 //app.appendChild('img');
-app.appendChild(container);
+//app.appendChild(container);
 
 var request = new XMLHttpRequest();
 request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
