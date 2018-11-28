@@ -6,6 +6,7 @@ logo.src = 'logo.png';
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
+document.body.appendChild(paragraph);
 app.appendChild(logo);
 app.appendChild(container);
 
