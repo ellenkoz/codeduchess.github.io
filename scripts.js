@@ -6,7 +6,7 @@ logo.src = 'logo.png';
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-if (typeof logo !== undefined {
+if (typeof logo !== undefined) {
 app.appendChild(logo);
 app.appendChild(container)};
 
