@@ -1,3 +1,5 @@
+window.onload=function() {
+   
 const app = document.getElementById('root');
 
 const logo = document.createElement('img');
@@ -37,7 +39,7 @@ request.onload = function () {
     app.appendChild(errorMessage);
   }
 }
-
+}
 request.send();
 
 
