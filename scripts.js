@@ -11,8 +11,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Marketing%20%26%20PR&category=Project%20%26%20Product%20Management&category=Social%20Media%20%26%20
-   Community&page=1', true);
+request.open('GET', 'https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Marketing%20%26%20PR&category=Project%20%26%20Product%20Management&category=Social%20Media%20%26%20Community&page=1', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
