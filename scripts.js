@@ -1,4 +1,3 @@
-window.onload=function() {
    
 const app = document.getElementById('root');
 
@@ -39,7 +38,7 @@ request.onload = function () {
     app.appendChild(errorMessage);
   }
 }
-}
+
 request.send();
 
 
