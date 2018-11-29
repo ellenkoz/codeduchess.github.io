@@ -11,7 +11,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
