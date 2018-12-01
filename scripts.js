@@ -25,7 +25,7 @@ request.onload = function () {
       h1.textContent = job.title;
 
       const p = document.createElement('p');
-      job.description = job.description.substring(0, 300);
+      job.description = JSON.stringify(job.description).substring(0, 300); 
       p.textContent = `${job.description}...`;
 
       container.appendChild(card);
