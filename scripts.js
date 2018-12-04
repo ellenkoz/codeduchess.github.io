@@ -14,10 +14,7 @@ request.open("GET","https://jobs.search.gov/jobs/search.json?query=analyst+jobs"
 request.onload = function () {
 
   // Begin accessing JSON data here
-  if (typeof test1 !== 'undefined') {
-  test2 = JSON.parse(test1);
-}
-
+  
  var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
     data.forEach(job => {
