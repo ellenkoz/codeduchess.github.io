@@ -4,7 +4,7 @@ const app = document.getElementById("root");
 const logo = document.createElement("img");
 logo.src = "logo.png";
 
-const container = document.createElement("div');
+const container = document.createElement("div");
 container.setAttribute("class", "container");
 
 app.appendChild(logo);
@@ -24,7 +24,7 @@ request.onload = function () {
       h1.textContent = job.title;
 
       const p = document.createElement("p");
-      job.description = JSON.parse(job.description).substring(0, 300); 
+      job.description = JSON.parse(job.description).substring(0,300); 
       p.textContent = `${job.description}...`;
 
       container.appendChild(card);
