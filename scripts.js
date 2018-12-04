@@ -33,7 +33,7 @@ request.onload = function () {
     });
   } else {
     const errorMessage = document.createElement("marquee");
-    errorMessage.textContent = `Hug It, it's not working!`;
+    errorMessage.textContent = `Hug it, it's not working!`;
     app.appendChild(errorMessage);
   }
 }
