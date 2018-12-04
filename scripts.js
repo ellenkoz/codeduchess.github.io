@@ -10,7 +10,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open("GET", "https://jobs.search.gov/jobs/search.json?query=analyst+jobs", true);
+request.open("GET","https://jobs.search.gov/jobs/search.json?query=analyst+jobs", true);
 request.onload = function () {
 
   // Begin accessing JSON data here
