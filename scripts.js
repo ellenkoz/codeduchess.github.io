@@ -10,7 +10,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open("GET","https://jobs.search.gov/jobs/search.json?query=analyst+jobs", true);
+request.open("GET","https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Engineering&category=Project%20%26%20Product%20Management&category=Social%20Media%20%26%20Community&level=Internship&level=Entry%20Level&level=Mid%20Level&level=Senior%20Level&page=1", true);
 request.onload = function () {
 
   // Begin accessing JSON data here
