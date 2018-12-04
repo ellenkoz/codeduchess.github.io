@@ -1,3 +1,5 @@
+// Whole-script strict mode syntax
+'use strict';
 const app = document.getElementById("root");
 
 const logo = document.createElement("img");
