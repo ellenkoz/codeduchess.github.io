@@ -17,7 +17,7 @@ request.onload = function () {
 
   // Begin accessing JSON data here
    'use strict';
- var data = JSON.parse(this.response);
+// var data = JSON.parse(this.response);
  
   if (request.status >= 200 && request.status < 400) {
     data.weather.forEach(job => {
