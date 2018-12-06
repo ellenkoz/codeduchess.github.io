@@ -26,7 +26,7 @@ var data = JSON.parse(this.response);
       h1.textContent = weather.title;
 
       const p = document.createElement("p");
-      weather.description =JSON.parse.substring(0,300); 
+      weather.description = weather.description.substring(0, 300);
       p.textContent = `${weather.description}...`;
 
       container.appendChild(card);
