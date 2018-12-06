@@ -12,7 +12,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Raleigh&APPID3190b3e074868b6189a94a8795afa8a2", true);
+request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&APPID3190b3e074868b6189a94a8795afa8a2", true);
 request.onload = function () {
 
   // Begin accessing JSON data here
