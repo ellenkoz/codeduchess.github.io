@@ -2,13 +2,13 @@
 'use strict';
 const app = document.getElementById("root");
 
-const logo = document.createElement("img");
-logo.src = "logo.png";
+const weather = document.createElement("img");
+weather.src = "weather.jpg";
 
 const container = document.createElement("div");
 container.setAttribute("class", "container");
 
-app.appendChild(logo);
+app.appendChild(weather);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
