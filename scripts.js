@@ -1,3 +1,4 @@
+// also test out New york Times API -- writes request for you
 // Whole-script strict mode syntax
 'use strict';
 const app = document.getElementById("root");
