@@ -17,7 +17,7 @@ request.open("GET", "https://api.openweathermap.org/data/2.5/forecast?zip=27612,
 request.onload = function () {    
   
   // Begin accessing JSON data here
-   'use strict';
+  
 var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
     data.weather.forEach(weather => {
