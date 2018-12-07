@@ -12,7 +12,7 @@ app.appendChild(weather);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&q=temp_min&q=temp_max&q=pressure&q=humidity&APPID=14d276f4fe655e659ec92149c7cebbec", true);
+request.open("GET", "https://api.openweathermap.org/data/2.5/forecase?lat=50.8609&lon=-0.08014&&units=metric&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 
 request.onload = function () {    
   
