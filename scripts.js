@@ -12,7 +12,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open("GET", "https://api.openweathermap.org/data/2.5/weather?zip=27612,us&zip=27702,us&APPID=14d276f4fe655e659ec92149c7cebbec", true);
+request.open("GET", "https://api.openweathermap.org/data/2.5/weather?zip=27612,us?&zip=27702,us&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 
 request.onload = function () {
   
