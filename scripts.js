@@ -1,6 +1,6 @@
 // also test out New york Times API -- writes request for you
 // Whole-script strict mode syntax
-/*
+
 'use strict';
 const app = document.getElementById("root");
 
@@ -16,13 +16,6 @@ app.appendChild(container); */
 var request = new XMLHttpRequest();
 request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 
-data.forEach(weather => {
-  // Log each movie's title
-  console.log(weather.title);
-});
-
-
-/*
 request.onload = function () {    
   
   // Begin accessing JSON data here
