@@ -28,6 +28,10 @@ var data = JSON.parse(this.response);
       const h1 = document.createElement("h1");
       h1.textContent = weather.title;
 
+      const t = document.createElement("t");
+      weather.temp = weather.temp.substring(0, 300);
+      t.textContent = `${weather.temp}...`;
+      
       const p = document.createElement("p");
       weather.description = weather.description.substring(0, 300);
       p.textContent = `${weather.description}...`;
