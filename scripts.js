@@ -30,7 +30,6 @@ var data = JSON.parse(this.response);
 
       const p = document.createElement("p");
       weather.description = weather.description.substring(0, 300);
-      weather.temp = weather.temp.substring(0, 300);
       p.textContent = `${weather.description}...`;
       p.textContent = `${weather.temp}...`;
 
