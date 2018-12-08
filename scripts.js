@@ -11,7 +11,7 @@ const container = document.createElement("div");
 container.setAttribute("class", "container");
 
 app.appendChild(weather);
-app.appendChild(container); */
+app.appendChild(container); 
 
 var request = new XMLHttpRequest();
 request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Wilmington&APPID=14d276f4fe655e659ec92149c7cebbec", true);
