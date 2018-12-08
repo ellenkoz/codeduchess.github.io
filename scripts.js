@@ -14,7 +14,7 @@ app.appendChild(weather);
 app.appendChild(container); */
 
 var request = new XMLHttpRequest();
-request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=14d276f4fe655e659ec92149c7cebbec", true);
+request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Atlanta&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 
 request.onload = function () {    
   
