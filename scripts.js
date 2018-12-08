@@ -41,6 +41,5 @@ var data = JSON.parse(this.response);
     errorMessage.textContent = `Hug it, it's not working!`;
     app.appendChild(errorMessage);
   }
-}
 
 request.send();
