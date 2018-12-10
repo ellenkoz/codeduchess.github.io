@@ -32,9 +32,9 @@ var data = JSON.parse(this.response);
       weather.description = weather.description.substring(0, 300);
       p.textContent = `${weather.description}...`;
       
-      const t = document.createElement("t");
+      const t = document.createElement("p");
       weather.temp = weather.temp.substring(0,300);
-      t.textContent = `${weather.temp}...`;
+      p.textContent = `${weather.temp}...`;
    
       container.appendChild(card);
       card.appendChild(h1);
