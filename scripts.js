@@ -27,7 +27,7 @@
 	      const h1 = document.createElement("h1");
 	      h1.textContent = weather.title;
 		    
-	      const name = document.createElement("p");
+	      const name = document.createElement("div1");
 	      weather.name = weather.name.substring(0, 300);
 	      name.textContent = `${weather.name}...`;
 	
