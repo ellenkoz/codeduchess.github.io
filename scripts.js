@@ -1,23 +1,18 @@
 	'use strict';
 	const app = document.getElementById("root");
 	
-
 	const weather = document.createElement("img");
 	weather.src = "weather.jpg";
 	
-
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
 	
-
 	app.appendChild(weather);
 	app.appendChild(container);
 	
-
 	var request = new XMLHttpRequest();
 	request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 	
-
 	request.onload = function () {    
 	  
 	  // Begin accessing JSON data here
