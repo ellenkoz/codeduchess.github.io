@@ -1,7 +1,6 @@
 	'use strict';
-	const app = document.getElementById("div1");
-	const app = document.getElementById("div2");
-	const app = document.getElementById("div3");
+	const app = document.getElementById("div");
+	
 	
 	const weather = document.createElement("img");
 	weather.src = "weather.jpg";
