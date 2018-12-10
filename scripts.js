@@ -6,7 +6,12 @@ request.open('GET', "https://api.openweathermap.org/data/2.5/weather?q=London&AP
 
 request.onload = function () {
   //begin accessing JSON data here
- }
+  var data = JSON.parse(this.response);
+  
+  data.forEach(weather => {
+    // log the weather details
+    console.log(weather);
+ });
 }
 //send request
 request.send();
