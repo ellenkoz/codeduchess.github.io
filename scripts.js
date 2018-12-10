@@ -34,7 +34,7 @@ var data = JSON.parse(this.response);
       
       const t = document.createElement("t");
       weather.temp = weather.temp.substring(0,300);
-      t.textContenr = `${weather.temp}...`;
+      t.textContent = `${weather.temp}...`;
    
 
       container.appendChild(card);
