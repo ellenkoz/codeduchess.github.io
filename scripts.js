@@ -30,8 +30,8 @@
 	      p.textContent = `${weather.description}...`;
 		    
 	      const t = document.createElement("p");
-	      weather.main.temp = weather.main.temp;
-	      t.textContent = `${weather.main.temp}...`;
+	      weather.temp = weather.temp;
+	      t.textContent = `${weather.temp}...`;
 	
 	      container.appendChild(card);
 	      card.appendChild(h1);
