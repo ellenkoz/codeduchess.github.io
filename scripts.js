@@ -35,9 +35,13 @@
 	      weather.description = weather.description.substring(0, 300);
 	      p.textContent = `${weather.description}...`;
 		    
+	      const m = document.createElement("p");
+	      weather.main.temp = weather.main.temp;
+	      t.textContent = `${data.main.temp}...`;
+		    
 	      const t = document.createElement("p");
 	      weather.main.temp = weather.main.temp;
-	      h1.textContent = `${weather.main.temp}...`; 
+	      t.textContent = `${data.main.temp}...`; 
 		    
 	      // Append the cards to the container element
 	      container.appendChild(card);
@@ -45,6 +49,7 @@
 	      // Each card will contain an h1 and a p    
 	      card.appendChild(h1);
 	      card.appendChild(p);
+	      card.appendChils(t);
 	    });
 	  } else {
 	    const errorMessage = document.createElement("marquee");
