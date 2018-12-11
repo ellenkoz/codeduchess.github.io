@@ -42,8 +42,10 @@
 	      const t = document.createElement("p");
 	      weather.main.temp = weather.main.temp;
 	      t.textContent = `${weather.main.temp}...`; */
+	
+	      container.appendChild(card);
 		    
-              container.appendChild(card);
+	      // Each card will contain an h1 and a p    
 	      card.appendChild(h1);
 	      card.appendChild(p);
 	    });
