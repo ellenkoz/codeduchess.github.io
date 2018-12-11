@@ -33,9 +33,11 @@
 	      weather.main = weather.main.substring(0, 300);
 	      m.textContent = `${weather.main}...`;
 		    
+	      const t = document.createElement("p");
+	      weather.main.temp = weather.main.temp;
+	      t.textContent = `${weather.main.temp}...`;
 		    
-	
-	      container.appendChild(card);
+              container.appendChild(card);
 	      card.appendChild(h1);
 	      card.appendChild(p);
 	    });
