@@ -1,6 +1,8 @@
-	'use strict';
+        //added strict mode to address following error message, "Uncaught SyntaxError: Unexpected token u in JSON at position 0."	
+        'use strict';
 	const app = document.getElementById("root");
-	
+
+	//add API related image
 	const weather = document.createElement("img");
 	weather.src = "weather.jpg";
 	
