@@ -28,6 +28,12 @@
 	      const p = document.createElement("p");
 	      weather.description = weather.description.substring(0, 300);
 	      p.textContent = `${weather.description}...`;
+		    
+	      const m = document.createElement("p");
+	      weather.main = weather.main.substring(0, 300);
+	      m.textContent = `${weather.main}...`;
+		    
+		    
 	
 	      container.appendChild(card);
 	      card.appendChild(h1);
