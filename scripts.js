@@ -35,10 +35,6 @@
 	      weather.description = weather.description.substring(0, 300);
 	      p.textContent = `${weather.description}...`;
 		    
-	      const m = document.createElement("p");
-	      weather.main = weather.main.substring(0, 300);
-	      h1.textContent = `${weather.main}...`;
-		    
 	      const t = document.createElement("p");
 	      weather.main.temp = weather.main.temp;
 	      h1.textContent = `${weather.main.temp}...`; 
