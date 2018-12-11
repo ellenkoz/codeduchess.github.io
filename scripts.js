@@ -8,7 +8,8 @@
 	
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
-	
+
+	//method to append the logo image and container div to the app root.
 	app.appendChild(weather);
 	app.appendChild(container);
 
