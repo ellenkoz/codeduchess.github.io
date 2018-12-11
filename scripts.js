@@ -29,13 +29,13 @@
 	      weather.description = weather.description.substring(0, 300);
 	      p.textContent = `${weather.description}...`;
 		    
-	      const m = document.createElement("p");
+	      /*const m = document.createElement("p");
 	      weather.main = weather.main.substring(0, 300);
 	      m.textContent = `${weather.main}...`;
 		    
 	      const t = document.createElement("p");
 	      weather.main.temp = weather.main.temp;
-	      t.textContent = `${weather.main.temp}...`;
+	      t.textContent = `${weather.main.temp}...`; */
 		    
               container.appendChild(card);
 	      card.appendChild(h1);
