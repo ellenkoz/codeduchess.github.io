@@ -36,8 +36,8 @@
 	      p.textContent = `${weather.description}...`;
 		    
 	      const m = document.createElement("p");
-	      weather.main.temp = weather.main.temp;
-	      t.textContent = `${data.main.temp}...`;
+	      weather.main = weather.main.substring(0, 300);
+	      h1.textContent = `${weather.main}...`;
 		    
 	      const t = document.createElement("p");
 	      weather.main.temp = weather.main.temp;
