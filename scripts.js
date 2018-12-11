@@ -25,7 +25,7 @@
 	  
 	var data = this.response;
 	  if (request.status >= 200 && request.status < 400) {
-	    data.weather.forEach(weather => {
+	    data.forEach(weather => {
 	      const card = document.createElement("div");
 	      card.setAttribute("class", "card");
 	      const h1 = document.createElement("h1");
