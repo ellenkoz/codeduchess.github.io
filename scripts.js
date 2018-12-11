@@ -23,7 +23,7 @@
 	  
 	// Begin accessing JSON data here
 	  
-	var data = JSON.parse(this.response);
+	var data = this.response;
 	  if (request.status >= 200 && request.status < 400) {
 	    data.weather.forEach(weather => {
 	      const card = document.createElement("div");
