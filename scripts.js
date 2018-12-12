@@ -32,10 +32,15 @@
 	      const main = document.createElement("p");
 	      weather.main = weather.main.substring(0, 300);
 	      main.textContent = `${weather.main}...`;
+		    
+	      const temp = document.createElement("p");
+	      main.temp = main.temp.substring(0, 300);
+	      temp.testContent = `${main.temp}...`;
 	
 	      container.appendChild(card);
 	      card.appendChild(main);
 	      card.appendChild(describe);
+	      card.appendChild(temp);
 	    });
 	  } else {
 	    const errorMessage = document.createElement("marquee");
