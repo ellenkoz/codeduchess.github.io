@@ -27,19 +27,23 @@
           const card = document.createElement("div");
           card.setAttribute("class", "card");
           const h1 = document.createElement("h1");
-          h1.textContent = weather.title;
+          h1.textContent = name;
 
           const p = document.createElement("p");
           //weather.description = weather.description.substring(0, 300);
           p.textContent = `${weather.description}...`;
+            
+           const name = name.createElement("p");
+            name =name.substring(0, 300);
+            h1.textContent = `${name}...`;
 
-          const m = document.createElement("p");
-          weather.main = weather.main.substring(0, 300);
-          h1.textContent = `${weather.main}...`;
+          //const m = document.createElement("p");
+          //weather.main = weather.main.substring(0, 300);
+         // h1.textContent = `${weather.main}...`;
 
-          const t = document.createElement("p");
-          weather.temp = weather.temp;
-          h1.textContent = `${data.temp}...`;
+         // const t = document.createElement("p");
+         // weather.temp = weather.temp;
+        //  h1.textContent = `${data.temp}...`;
 
           // Append the cards to the container element
           container.appendChild(card);
