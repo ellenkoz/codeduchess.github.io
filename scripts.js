@@ -34,7 +34,7 @@
 	      main.textContent = `${weather.main}...`;
 		    
 	      const temp = document.createElement("p");
-	      main.temp = main.temp.substring(0, 300);
+	      main.temp = main.temp;
 	      temp.testContent = `${main.temp}...`;
 	
 	      container.appendChild(card);
