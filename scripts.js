@@ -31,7 +31,7 @@
 	
 	      container.appendChild(card);
 	      card.appendChild(h1);
-	      card.appendChild(p);
+	      card.appendChild(describe);
 	    });
 	  } else {
 	    const errorMessage = document.createElement("marquee");
