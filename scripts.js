@@ -27,7 +27,7 @@
           const card = document.createElement("div");
           card.setAttribute("class", "card");
           const h1 = document.createElement("h1");
-          h1.textContent = name;
+          h1.textContent = weather;
 
           const p = document.createElement("p");
           //weather.description = weather.description.substring(0, 300);
