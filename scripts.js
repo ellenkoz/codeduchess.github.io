@@ -55,7 +55,7 @@
           card.appendChild(h1);
           card.appendChild(p);
           card.appendChild(main);
-        });
+        }});
       } else {
         const errorMessage = document.createElement("marquee");
         errorMessage.textContent = `Hug it, it's not working!`;
