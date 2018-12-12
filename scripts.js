@@ -34,8 +34,11 @@
 	      main.textContent = `${weather.main}...`;
 		    
 	      const temp = document.createElement("p");
-	      main.temp = main.temp;
-	      temp.testContent = `${main.temp}...`;
+	      temp.textContent = `${data.main.temp}...`;
+		    
+	    //  const temp = document.createElement("p");
+          //weather.main.temp = weather.main.temp;
+          //temp.textContent = `${data.main.temp}...`;	    
 	
 	      container.appendChild(card);
 	      card.appendChild(main);
