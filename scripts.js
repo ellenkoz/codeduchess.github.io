@@ -29,7 +29,7 @@
 	      weather.description = weather.description.substring(0, 300);
 	      describe.textContent = `${weather.description}...`;
 		    
-	      const main = document.createElement("p');
+	      const main = document.createElement("p");
 	      weather.main = weather.main.substring(0, 300);
 	      main.textContent = `${weather.main}...`;
 	
