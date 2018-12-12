@@ -1,4 +1,4 @@
-        const app = document.getElementById("root");
+    const app = document.getElementById("root");
 
     //add API related image
     const weather = document.createElement("img");
@@ -37,9 +37,9 @@
           //weather.main = weather.main.substring(0, 300);
           h1.textContent = `${weather.main}...`;
 
-          const t = document.createElement("p");
+          //const t = document.createElement("p");
           //weather.main.temp = weather.main.temp;
-          t.textContent = `${data.main.temp}...`;
+          //t.textContent = `${data.main.temp}...`;
 
           // Append the cards to the container element
           container.appendChild(card);
