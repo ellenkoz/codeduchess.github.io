@@ -34,7 +34,7 @@
           p.textContent = `${weather.description}...`;
 
           const m = document.createElement("p");
-          //weather.main = weather.main.substring(0, 300);
+          weather.main = weather.main.substring(0, 300);
           h1.textContent = `${weather.main}...`;
 
           const t = document.createElement("p");
