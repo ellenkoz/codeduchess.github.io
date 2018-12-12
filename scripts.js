@@ -27,7 +27,7 @@
 	
 	      const describe = document.createElement("p");
 	      weather.description = weather.description.substring(0, 300);
-	      p.textContent = `${weather.description}...`;
+	      describe.textContent = `${weather.description}...`;
 	
 	      container.appendChild(card);
 	      card.appendChild(h1);
