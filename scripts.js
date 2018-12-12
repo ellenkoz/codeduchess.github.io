@@ -34,8 +34,8 @@
           p.textContent = `${weather.description}...`;
           
           const main = document.createElement("p");
-          weather.main = weather.main.substring(0, 300);
-          h1.textContent = `${weather.main}...`;
+          main = main.substring(0, 300);
+          h1.textContent = `${main}...`;
             
           
           // Append the cards to the container element
