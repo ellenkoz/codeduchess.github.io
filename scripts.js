@@ -34,7 +34,7 @@
 	      main.textContent = `${weather.main}...`;
 	
 	      container.appendChild(card);
-	      card.appendChild(h1);
+	      card.appendChild(main);
 	      card.appendChild(describe);
 	    });
 	  } else {
