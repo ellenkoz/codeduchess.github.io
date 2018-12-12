@@ -28,7 +28,17 @@
           card.setAttribute("class", "card");
           const h1 = document.createElement("h1");
           h1.textContent = weather;
-
+            
+            
+       var data2 = JSON.parse(this.response);
+      if (request.status >= 200 && request.status < 400) {
+        data.main.forEach(main => {
+          const card = document.createElement("div");
+          card.setAttribute("class", "card");
+          const h1 = document.createElement("h1");
+          h1.textContent = main;
+            
+            
           const p = document.createElement("p");
           weather.description = weather.description.substring(0, 300);
           p.textContent = `${weather.description}...`;
