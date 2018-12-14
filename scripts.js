@@ -12,7 +12,6 @@
 	
 	var request = new XMLHttpRequest();
         request.open("GET", "https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Project%20%26%20Product%20Management&category=Social%20Media%20%26%20Community&page=1", true);
-	//request.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&APPID=14d276f4fe655e659ec92149c7cebbec", true);
 	
 	request.onload = function () {    
 	  
@@ -26,9 +25,9 @@
 	      const h1 = document.createElement("h1");
 	      h1.textContent = results;
 	
-	      const list = document.createElement("p");
-	      page.results = page.results.substring(0, 300);
-	      list.textContent = `${results}...`;
+	      const jobDesc = document.createElement("p");
+	      results.contents = results.contents.substring(0, 300);
+	      jobDesc.textContent = `${results.contents}...`;
 		    
 	     // const main = document.createElement("p");
 	      //weather.main = weather.main.substring(0, 300);
@@ -42,7 +41,7 @@
           //temp.textContent = `${data.main.temp}...`;	    
 	
 	      container.appendChild(card);
-	      card.appendChild(list);
+	      card.appendChild(jobDesc);
 	      //card.appendChild(describe);
 	      //card.appendChild(temp);
 	    });
