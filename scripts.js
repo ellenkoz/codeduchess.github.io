@@ -7,7 +7,7 @@
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
 	
-	app.appendChild(results);
+	app.appendChild(page);
 	app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
@@ -24,11 +24,11 @@
 	      const card = document.createElement("div");
 	      card.setAttribute("class", "card");
 	      const h1 = document.createElement("h1");
-	      h1.textContent = results.title;
+	      h1.textContent = page.results;
 	
-	      const jobTitle = document.createElement("p");
-	      results.name = results.name.substring(0, 300);
-	     jobtitle.textContent = `${results.name}...`;
+	      const list = document.createElement("p");
+	      page.results = page.results.substring(0, 300);
+	      list.textContent = `${page.results}...`;
 		    
 	     // const main = document.createElement("p");
 	      //weather.main = weather.main.substring(0, 300);
@@ -42,7 +42,7 @@
           //temp.textContent = `${data.main.temp}...`;	    
 	
 	      container.appendChild(card);
-	      card.appendChild(jobTitle);
+	      card.appendChild(list);
 	      //card.appendChild(describe);
 	      //card.appendChild(temp);
 	    });
