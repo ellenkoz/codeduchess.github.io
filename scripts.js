@@ -11,7 +11,7 @@
 	//app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://jobs.github.com/positions.json?description=python&location=new+york", true);
+        request.open("GET", "https://authenticjobs.com/api/?api_key=a446a0eefe6f5699283g34f4d5b51fa0&method=aj.jobs.search&keywords=php,mysql&perpage=1", true);
 	
 	request.onload = function () {    
 	  
