@@ -11,7 +11,7 @@
 	//app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://jobs.github.com/positions.json?description=python&location=raleigh", true);
+        request.open("GET", "https://jobs.github.com/positions.json?description=python&location=new+york", true);
 	
 	request.onload = function () {    
 	  
