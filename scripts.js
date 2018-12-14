@@ -2,7 +2,7 @@
 	const app = document.getElementById("root");
 	
 	const tesla = document.createElement("img");
-	tesla.src = "CMAS_tesla.jpg";
+	tesla.src = "CMAS_Tesla.jpg";
 	
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
