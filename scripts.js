@@ -20,7 +20,7 @@
 	  
 	var data = JSON.parse(this.response);
 	  if (request.status >= 200 && request.status < 400) {
-	    data.results.forEach(weather => {
+	    data.results.forEach(results => {
 	      const card = document.createElement("div");
 	      card.setAttribute("class", "card");
 	      const h1 = document.createElement("h1");
@@ -42,7 +42,7 @@
           //temp.textContent = `${data.main.temp}...`;	    
 	
 	      container.appendChild(card);
-	      card.appendChild(name);
+	      card.appendChild(jobTitle);
 	      //card.appendChild(describe);
 	      //card.appendChild(temp);
 	    });
