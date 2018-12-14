@@ -1,13 +1,13 @@
 	'use strict';
 	const app = document.getElementById("root");
 	
-	const weather = document.createElement("img");
-	weather.src = "weather.jpg";
+	const tesla = document.createElement("img");
+	tesla.src = "CMAS_tesla.jpg";
 	
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
 	
-	app.appendChild(page);
+	app.appendChild(tesla);
 	app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
