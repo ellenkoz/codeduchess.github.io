@@ -11,7 +11,7 @@
 	//app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://www.themuse.com/api/public/jobs?category=Creative%20%26%20Design&category=Data%20Science&category=Engineering&category=Project%20%26%20Product%20Management&category=Social%20Media%20%26%20Community&page=1", true);
+        request.open("GET", "https://jobs.github.com/positions.json?description=python&location=raleigh", true);
 	
 	request.onload = function () {    
 	  
