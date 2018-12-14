@@ -24,11 +24,11 @@
 	      const card = document.createElement("div");
 	      card.setAttribute("class", "card");
 	      const h1 = document.createElement("h1");
-	      h1.textContent = page.results;
+	      h1.textContent = results;
 	
 	      const list = document.createElement("p");
 	      page.results = page.results.substring(0, 300);
-	      list.textContent = `${page.results}...`;
+	      list.textContent = `${results}...`;
 		    
 	     // const main = document.createElement("p");
 	      //weather.main = weather.main.substring(0, 300);
