@@ -11,8 +11,8 @@
 	//app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://www.jobs.github.com/positions.json?description=ruby&page=1", true);
-	
+        request.open("GET", "https://jobs.github.com/positions.json?description=ruby&page=1", true);
+       
 	request.onload = function () {    
 	  
 	  // Begin accessing JSON data here
@@ -26,8 +26,8 @@
 	      h1.textContent = results;
 	
 	      const jobDesc = document.createElement("p");
-	      results.contents = results.contents.substring(0, 300);
-	      jobDesc.textContent = `${results.contents}...`;
+	      description = description.substring(0, 300);
+	      jobDesc.textContent = `${description}...`;
 		    
 	     // const main = document.createElement("p");
 	      //weather.main = weather.main.substring(0, 300);
