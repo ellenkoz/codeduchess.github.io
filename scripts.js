@@ -11,7 +11,7 @@
 	//app.appendChild(container);
 	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://authenticjobs.com/api/?api_key=e180d2057675aa44b34bc15bdc9f3ac7&keywords=php,mysql&perpage=1", true);
+        request.open("GET", "https://authenticjobs.com/api/?api_key=e180d2057675aa44b34bc15bdc9f3ac7&method=aj.jobs.getlocations&country=US", true);
 	
 	request.onload = function () {    
 	  
