@@ -26,8 +26,8 @@
 	      h1.textContent = jobinfo;
 	
 	      const jobDesc = document.createElement("p");
-	      description = description.substring(0, 300);
-	      jobDesc.textContent = `${description}...`;
+	      data.description = data.description.substring(0, 300);
+	      jobDesc.textContent = `${data.description}...`;
 		    
 	     // const main = document.createElement("p");
 	      //weather.main = weather.main.substring(0, 300);
