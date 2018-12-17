@@ -23,21 +23,9 @@
 	      data.description = data.description.substring(0, 300);
 	      jobDesc.textContent = `${data.description}...`;
 		    
-	     // const main = document.createElement("p");
-	      //weather.main = weather.main.substring(0, 300);
-	      //main.textContent = `${weather.main}...`;
-		    
-	     // const temp = document.createElement("p");
-	     // temp.textContent = `${data.main.temp}...`;
-		    
-	    //  const temp = document.createElement("p");
-          //weather.main.temp = weather.main.temp;
-          //temp.textContent = `${data.main.temp}...`;	    
-	
 	      container.appendChild(card);
 	      card.appendChild(jobDesc);
-	      //card.appendChild(describe);
-	      //card.appendChild(temp);
+	   
 	    });
 	  } else {
 	    const errorMessage = document.createElement("marquee");
