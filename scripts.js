@@ -20,7 +20,7 @@
 	      h1.textContent = title;
 	
 	      const jobDesc = document.createElement("p");
-	      data.description = data.description.substring(0, 300);
+	      description = description.substring(0, 300);
 	      jobDesc.textContent = `${data.description}...`;
 		    
 	      container.appendChild(card);
