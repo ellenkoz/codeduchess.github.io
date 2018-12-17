@@ -19,11 +19,11 @@
 	  
 	var data = JSON.parse(this.response);
 	  if (request.status >= 200 && request.status < 400) {
-	    data.forEach(jobinfo => {
+	    data.forEach(title => {
 	      const card = document.createElement("div");
 	      card.setAttribute("class", "card");
 	      const h1 = document.createElement("h1");
-	      h1.textContent = jobinfo;
+	      h1.textContent = title;
 	
 	      const jobDesc = document.createElement("p");
 	      data.description = data.description.substring(0, 300);
