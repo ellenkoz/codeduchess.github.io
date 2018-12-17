@@ -1,15 +1,9 @@
 	'use strict';
 	const app = document.getElementById("root");
 	
-	//const tesla = document.createElement("img");
-	//tesla.src = "CMAS_Tesla.jpg";
-	
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
-	
-	//app.appendChild(tesla);
-	//app.appendChild(container);
-	
+		
 	var request = new XMLHttpRequest();
         request.open("GET", "https://jobs.github.com/positions.json?description=ruby&page=1", true);
        
