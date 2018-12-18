@@ -19,9 +19,9 @@
 	      const h1 = document.createElement("h1");
 	      h1.textContent = title;
 	
-	      const title = document.createElement("p");
-	      title = title.substring(0, 300);
-	      title.textContent = `${data.title}...`;
+	      const company = document.createElement("p");
+	      company = company.substring(0, 300);
+	      company.textContent = `${data.company}...`;
 		    
 	      container.appendChild(card);
 	      card.appendChild(title);
