@@ -3,14 +3,19 @@
 	
 	const container = document.createElement("div");
 	container.setAttribute("class", "container");
-		
+
+	// create a request variable and assign a new HMLHttpRequest object to it	
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://jobs.github.com/positions.json?description=analyst&location=raleigh&page=1", true);
+
+	// open a new connection, using the GET request on the URL endpoint
+        request.open('GET', 'https://jobs.github.com/positions.json?description=analyst&location=raleigh&page=1', true);
        
 	request.onload = function () {    
-	  
-	  // Begin accessing JSON data here
-	  
+	    // Begin accessing JSON data here
+	}
+	// send request
+	request.send();
+	/*  
 	var data = JSON.parse(this.response);
 	  if (request.status >= 200 && request.status < 400) {
 	    data.forEach(title => {
@@ -35,4 +40,5 @@
 	}
 
 	request.send();
+	*/
 
