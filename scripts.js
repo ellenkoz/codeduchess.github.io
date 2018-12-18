@@ -5,7 +5,7 @@
 	container.setAttribute("class", "container");
 		
 	var request = new XMLHttpRequest();
-        request.open("GET", "https://jobs.github.com/positions.json?description=ruby&page=1", true);
+        request.open("GET", "https://jobs.github.com/positions.json?description=analyst&location=raleigh&page=1", true);
        
 	request.onload = function () {    
 	  
