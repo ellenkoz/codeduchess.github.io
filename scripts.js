@@ -12,6 +12,11 @@
        
 	request.onload = function () {    
 	    // Begin accessing JSON data here
+	var data = JSON.parse(this.response);
+		
+	data.forEach(job => {
+	// log each job title
+	console.log(job.title);
 	}
 	// send request
 	request.send();
