@@ -17,7 +17,7 @@
 	data.forEach(job => {
 	// log each job title
 	console.log(job.title);
-	)}
+	});
 	// send request
 	request.send();
 	/*  
