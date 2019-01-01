@@ -22,7 +22,7 @@ request.onload = function () {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
-      const h1 = document.createElement('TEXTAREA');
+      const h1 = document.createElement('h1');
       h1.textContent = job.name;
       
       //testing to get apply info on page
