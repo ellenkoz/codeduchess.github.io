@@ -22,12 +22,12 @@ request.onload = function () {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
-      //const h1 = document.createElement('h1');
-      //h1.textContent = job.name;
+      const h1 = document.createElement('TEXTAREA');
+      h1.textContent = job.name;
       
       //testing to get apply info on page
-      const apply = document.createElement('h4');
-      h4.textContent = data.results.refs.landingpage;
+      //const apply = document.createElement('h4');
+      //h4.textContent = data.results.refs.landingpage;
 
       const p = document.createElement('p');
       job.contents = job.contents.substring(0, 300);
