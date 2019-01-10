@@ -11,7 +11,7 @@ container.setAttribute('class', 'container');
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open ('GET', 'https://api.jobs.com/search/jobs?title=programmer&city=raleigh&state=NC&radius=40&country=US', true); 
+ 
 //request.open('GET', 'https://jobs.github.com/positions.json?&location=north+carolina&page=1', true);
 //request.open('GET', 'https://www.themuse.com/api/public/jobs?page=1', true);
 request.onload = function () {
