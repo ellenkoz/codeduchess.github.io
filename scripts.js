@@ -18,7 +18,7 @@ request.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
-    data.results.forEach(job => {
+    data.url.forEach(job => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
@@ -30,7 +30,7 @@ request.onload = function () {
       //h4.textContent = data.results.refs.landingpage;
 
       const p = document.createElement('p');
-      job.contents = job.contents.substring(0, 300);
+      job.url = job.url.substring(0, 300);
       p.textContent = `${job.contents}...`;
 
       container.appendChild(card);
