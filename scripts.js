@@ -25,10 +25,6 @@ request.onload = function () {
       const h1 = document.createElement('h1');
       h1.textContent = job.name;
       
-      //testing to get apply info on page
-      //const apply = document.createElement('h4');
-      //h4.textContent = data.results.refs.landingpage;
-
       const p = document.createElement('p');
       job.url = job.url.substring(0, 300);
       p.textContent = `${job.contents}...`;
