@@ -23,7 +23,7 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = job.name;
+      h1.textContent = job.url;
       
       const p = document.createElement('p');
       job.url = job.url.substring(0, 300);
