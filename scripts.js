@@ -22,12 +22,12 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = job.url;
+      h1.textContent = job.title;
       
       const p = document.createElement('p');
       // use substring on the <p> element to limit the description andkeep each card equal length
-      job.url = job.url.substring(0, 300);
-      p.textContent = `${job.contents}...`;
+      job.description = job.description.substring(0, 300);
+      p.textContent = `${job.description}...`;
 
       container.appendChild(card);
       card.appendChild(h1);
