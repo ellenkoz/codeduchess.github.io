@@ -11,7 +11,7 @@ app.appendChild(container);
 var request = new XMLHttpRequest();
  
 // use Heroku as proxy to resolve CORS error & list URL endpoint
-request.open('GET', 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&page=1', true);
+request.open('GET', 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&markdown=true&page=1', true);
 request.onload = function () {
 
   // Begin accessing JSON data here & convert JSON to JavaScript objects via JSON.parse
