@@ -17,7 +17,7 @@ request.onload = function () {
   // Begin accessing JSON data here & convert JSON to JavaScript objects via JSON.parse
   var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
-    data.url.forEach(job => {
+    data.forEach(job => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
