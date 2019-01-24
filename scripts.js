@@ -1,22 +1,20 @@
-/*
+// strict mode applied to solve "Uncaught syntax error: unexpected token u in JSON @ position 0"
 'use strict';
 const app = document.getElementById('root');
-
-//const logo = document.createElement('img');
-//logo.src = 'logo.png';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-//app.appendChild(logo);
 app.appendChild(container);
 
+// retrieve data with HTTP request
 var request = new XMLHttpRequest();
  
-request.open('GET', 'https://jobs.github.com/positions.json?&location=north+carolina&page=1', true);
+// use Heroku as proxy to resolve CORS error & list URL endpoint
+request.open('GET', 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&page=1', true);
 request.onload = function () {
 
-  // Begin accessing JSON data here
+  // Begin accessing JSON data here & convert JSON to JavaScript objects via JSON.parse
   var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
     data.url.forEach(job => {
