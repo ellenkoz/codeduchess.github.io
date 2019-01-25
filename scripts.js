@@ -39,5 +39,5 @@ request.onload = function () {
     app.appendChild(errorMessage);
   }
 }
-//should filter go here?
+
 request.send(); 
