@@ -9,7 +9,6 @@ app.appendChild(container);
 
 // retrieve data with HTTP request
 var request = new XMLHttpRequest();
- 
 // use Heroku as proxy to resolve CORS error & list URL endpoint
 request.open('GET', 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&markdown=true&page=1', true);
 request.onload = function () {
@@ -25,7 +24,7 @@ request.onload = function () {
       h1.textContent = job.title;
       
       const p = document.createElement('p');
-      // use substring on the <p> element to limit the description andkeep each card equal length
+      // use substring on the <p> element to limit the description and keep each card equal length
       job.description = job.description.substring(0, 300);
       p.textContent = `${job.description}...`;
 
