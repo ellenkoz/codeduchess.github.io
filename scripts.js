@@ -1,5 +1,4 @@
-
-     
+    
       // USED STRICT MODE TO SOLVE: “UNCAUGHT SYNTAX ERROR: UNEXPECTED TOKEN U IN JSON @ POSITION 0”
       'use strict';
        var apiData=""; 
